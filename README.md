@@ -1,2 +1,2 @@
-# 20timeweb
-website/ js game for 20 time project
+# 20 time website 
+This project is for my schools 20 ime project. It is projected to be a javascript game.
