@@ -5,7 +5,4 @@ function start(){
 
   console.out("hello world");
 
-
-
-
 }
