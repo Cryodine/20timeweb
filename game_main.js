@@ -4,7 +4,7 @@ function start(){
   alert("This is a test of the alert system");
   
   var canvas = document.getElementById('test');
-  var ctx = canvas.getContext('2d');
+  var ctx = canvas.getContext('2d',{ alpha: false });
   ctx.fillStyle = 'green';
   ctx.fillRect(10, 10, 100, 100);
 
