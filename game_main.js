@@ -1,7 +1,7 @@
 function start(){
   
   console.log("hello world");
-  alert("This is a test of the alert system");
+  alert("This is a test of webgl");
   
   var canvas = document.getElementById('test');
   var ctx = canvas.getContext('2d',{ alpha: false });
