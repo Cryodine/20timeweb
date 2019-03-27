@@ -7,6 +7,7 @@ function start(){
   
   var canvas = document.getElementById('test');
   var ctx = canvas.getContext('2d',{ alpha: false });
+  document.body.insertBefore(canvas, document.body.childNodes[0]);
   ctx.fillStyle = 'green';
   ctx.fillRect(10, 10, 100, test);
   
