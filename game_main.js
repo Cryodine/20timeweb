@@ -12,11 +12,14 @@ function start(){
     this.height = height;
     this.x = x;
     this.y = y;
-    ctx.fillStyle = color;
-    ctx.fillRect(this.x, this.y, this.width, this.height);
+    this.update = function(){
+      ctx.fillStyle = color;
+      ctx.fillRect(this.x, this.y, this.width, this.height);
+    }
   }
   
   var Player = new cube(100,100,"purple",40,40);
+  Player.update();
   
   
   function test(a){
