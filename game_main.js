@@ -1,15 +1,23 @@
 function start(){
   
   console.log("hello world");
-  alert("This is a test of webgl");
-  
-  var test = 100;
+  alert("This game is still very in development");
   
   var canvas = document.getElementById('test');
   var ctx = canvas.getContext('2d',{ alpha: false });
   document.body.insertBefore(canvas, document.body.childNodes[0]);
-  ctx.fillStyle = 'green';
-  ctx.fillRect(10, 10, 100, test);
+  
+  function cube(width, height, color, x, y) {
+    this.width = width;
+    this.height = height;
+    this.x = x;
+    this.y = y;
+    ctx.fillStyle = color;
+    ctx.fillRect(this.x, this.y, this.width, this.height);
+  }
+  
+  var Player = new cube(100,100,"purple",40,40);
+  
   
   function test(a){
     
