@@ -6,6 +6,7 @@ function start(){
   var canvas = document.getElementById('test');
   var ctx = canvas.getContext('2d',{ alpha: false });
   document.body.insertBefore(canvas, document.body.childNodes[0]);
+  setInterval(update, 20);
   
   function cube(width, height, color, x, y) {
     this.width = width;
@@ -19,8 +20,11 @@ function start(){
   }
   
   var Player = new cube(100,100,"purple",40,40);
-  cube.x++;
-  Player.update();
+  
+  function update(){
+     cube.x++;
+     Player.update();
+  }
   
   
   //function test(a){
