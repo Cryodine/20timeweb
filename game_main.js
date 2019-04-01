@@ -19,18 +19,19 @@ function start(){
   }
   
   var Player = new cube(100,100,"purple",40,40);
+  cube.x++;
   Player.update();
   
   
-  function test(a){
+  //function test(a){
     
-    if(a.keyCode == 13){
-      test = 200;
-    }
+  //  if(a.keyCode == 13){
+    //  test = 200;
+    //}
     
-  }
+  //}
   
-  document.addEventListener('keydown', test(event));
+ // document.addEventListener('keydown', test(event));
   
   document.addEventListener('keydown', function(event) {
     if(event.keyCode == 37) {
