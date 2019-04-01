@@ -14,6 +14,7 @@ function start(){
     this.x = x;
     this.y = y;
     this.update = function(){
+      ctx = canvas.getContext('2d',{ alpha: false });
       ctx.fillStyle = color;
       ctx.fillRect(this.x, this.y, this.width, this.height);
     }
