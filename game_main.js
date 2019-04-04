@@ -23,9 +23,9 @@ function start(){
   var Player = new cube(100,100,"purple",40,40);
   
   function update(){
+     ctx.clearRect(0,0,canvas.width,canvas.height);
      cube.x++;
      Player.update();
-     ctx.clearRect(0,0,canvas.width,canvas.height);
   }
   
   
