@@ -24,7 +24,7 @@ function start(){
   
   function update(){
      ctx.clearRect(0,0,canvas.width,canvas.height);
-     cube.x++;
+     Player.x++;
      Player.update();
   }
   
