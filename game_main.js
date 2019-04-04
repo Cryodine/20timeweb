@@ -6,7 +6,7 @@ function start(){
   var canvas = document.getElementById('test');
   var ctx = canvas.getContext('2d',{ alpha: false });
   document.body.insertBefore(canvas, document.body.childNodes[0]);
-  setInterval(update, 20);
+  var interval = setInterval(update, 20);
   
   function cube(width, height, color, x, y) {
     this.width = width;
