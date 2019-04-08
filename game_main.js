@@ -28,17 +28,6 @@ function start(){
      Player.update();
   }
   
-  
-  //function test(a){
-    
-  //  if(a.keyCode == 13){
-    //  test = 200;
-    //}
-    
-  //}
-  
- // document.addEventListener('keydown', test(event));
-  
   document.addEventListener('keydown', function(event) {
     if(event.keyCode == 37) {
         alert('Left was pressed');
